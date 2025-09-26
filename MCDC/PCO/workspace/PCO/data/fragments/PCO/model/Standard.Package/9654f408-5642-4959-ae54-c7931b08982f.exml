@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Model" version="4">
+  <OBJECT>
+    <ID name="Model" mc="Standard.Package" uid="9654f408-5642-4959-ae54-c7931b08982f"/>
+    <PID name="PCO" mc="Standard.Project" uid="75f77976-bf33-4c69-8cab-3ad710bd80dc"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="a5d2353d-0b6e-445b-b15b-8afa75c69c9c"/>
+        <COMPID name="Trajet" mc="Standard.Class" uid="8a711122-d12f-4b29-ba92-f93325f71dec"/>
+        <COMPID name="Evalutation" mc="Standard.Class" uid="217b43ad-1da5-4451-9cf3-0539534f3807"/>
+        <COMPID name="Appariement" mc="Standard.Class" uid="359f89c5-b193-4947-b9de-4f66589631f4"/>
+        <COMPID name="Participation" mc="Standard.Class" uid="fc13153c-e42b-4c1c-9d6e-711a94c44f6a"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe du domaine métier" mc="Standard.ClassDiagram" uid="844fa1ed-b0a8-42e7-a78f-7b3d5ab93fac"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

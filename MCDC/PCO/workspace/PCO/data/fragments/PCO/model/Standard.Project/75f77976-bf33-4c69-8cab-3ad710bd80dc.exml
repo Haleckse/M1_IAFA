@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PCO" version="4">
+  <OBJECT>
+    <ID name="PCO" mc="Standard.Project" uid="75f77976-bf33-4c69-8cab-3ad710bd80dc"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[PCO]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="pco" mc="Standard.Package" uid="c3f206a5-6a20-47fb-b940-287089736f40"/>
+        <COMPID name="Model" mc="Standard.Package" uid="9654f408-5642-4959-ae54-c7931b08982f"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="PCO" mc="Infrastructure.DiagramSet" uid="92bd5b18-58a7-4024-94cc-471fffdd6eef"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

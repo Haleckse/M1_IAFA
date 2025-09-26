@@ -1,0 +1,11 @@
+# Ignorer les fichiers runtime de Modelio ou de l'IDE
+.runtime/
+*.dbf*
+*.idx*
+*.log
+*.tmp
+
+# Facultatif selon ton IDE :
+*.class
+bin/
+target/
