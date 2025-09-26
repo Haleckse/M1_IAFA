@@ -26,6 +26,11 @@ let digit = ['0'-'9']
 let sign = ['+' '-']
 let dec = sign? digit+
 
+
+let letter = ['a'-'z' 'A'-'Z']
+let ident = letter (letter | digit | '_')*
+
+
 rule token = parse
 	'\n'			{ incr line; token lexbuf }
 |	[' ' '\t' '\r']	{ token lexbuf }
@@ -46,6 +51,10 @@ rule token = parse
 |	dec	as n		{ INT (int_of_string n) }
 
 |	eof				{ EOF }
+
+|	ident as id { ID id }
+|	'+'				{ PLUS }
+
 |	_ as c			{ raise (LexerError (sprintf "illegal char '%c'" c)) }
 
 and ecom = parse

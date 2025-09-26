@@ -54,6 +54,8 @@ let rec make_when f ws =
 %token DOT_DOT
 %token DOT
 
+%token PLUS
+
 /* values */
 %token <string> ID
 %token<int> INT
@@ -110,6 +112,8 @@ statement:
 			if (snd $1) != 0 then error "assigned Y must be 0";
 			SET_CELL (0, $3)
 		}
+|   ID ASSIGN expression
+        { NOP }
 ;
 
 
@@ -124,10 +128,18 @@ cell:
 ;
 
 expression:
+
 	cell
 		{ CELL (0, fst $1, snd $1) }
 |	INT
 		{ CST $1 }
+|   ID 
+		{ NONE }
+
+|	INT PLUS INT   
+		{ NONE }
+
+
 ;
 
 
